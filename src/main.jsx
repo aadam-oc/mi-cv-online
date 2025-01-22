@@ -17,7 +17,7 @@ function App() {
     useEffect(() => {
         // Make the GET request to the API
         setLoading(true); // Set loading state at the start of the request
-        fetch('http://localhost/api/api.php') // Adjusted to use the correct URL
+        fetch('http://172.17.22.166/api/api.php') // Adjusted to use the correct URL
             .then((response) => {
                 if (!response.ok) {
                     throw new Error('Error al obtener los datos');
