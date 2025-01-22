@@ -15,9 +15,9 @@ function App() {
     const [loading, setLoading] = useState(true);
 
     useEffect(() => {
-        // Make the GET request to the API
+        // Make the GET request to the Vercel serverless function
         setLoading(true); // Set loading state at the start of the request
-        fetch('http://172.17.22.234/api/api.php') // Adjusted to use the correct URL
+        fetch('/api/fetchData') // Calls the Vercel serverless function
             .then((response) => {
                 if (!response.ok) {
                     throw new Error('Error al obtener los datos');
