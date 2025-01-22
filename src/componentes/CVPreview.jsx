@@ -1,7 +1,14 @@
-import jsPDF from "jspdf";
+// src/componentes/CVPreview.jsx
 
-function generatePDF() {
-  const doc = new jsPDF();
-  doc.text("Curriculum Vitae", 10, 10);
-  doc.save("cv.pdf");
-}
+import React from 'react';
+
+const CVPreview = () => {
+  return (
+    <div>
+      <h2>Vista previa del CV</h2>
+      {/* Aqui va el contenido del CV */}
+    </div>
+  );
+};
+
+export default CVPreview; 
